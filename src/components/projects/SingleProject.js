@@ -10,7 +10,7 @@ export default function SingleProject({ name, url }) {
                 <div className="card-body">
                     <div className="card-title">{name}</div>
                     <p className="card-text">text</p>
-                    <a href={url} className="btn btn-primary">Github</a>
+                    <a href={url} className="btn btn-primary" target="_blank">Go to site</a>
                 </div>
             </div>
         </div>
