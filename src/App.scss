@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+$Lora: "Lora", serif;
+
+* {
+  margin: 0 0;
+  padding: 0 0;
+
+  body {
+    font-family: $Lora;
+    background-color: lightgray;
+
+    text-align: center;
+    .mynav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .container {
+      max-width: 90%;
+    }
+
+    #aboutme {
+      margin-top: 5em;
+      height: 100vh;
+      background: url("./assets/backgrounds/about.jpg") center/cover fixed
+        no-repeat;
+      color: white;
+      padding: 18% 5%;
+      hr {
+        background-color: white;
+        margin-left: 25%;
+        width: 50%;
+        animation: colorchange 2s infinite;
+      }
+    }
+
+    #myprojects {
+      padding: 1em 1em;
+      margin-top: 3em;
+      display: grid;
+      h3 {
+        text-align: center;
+      }
+
+      .col-sm-6 {
+        margin-top: 1em;
+      }
+
+      .card {
+        height: 100% !important;
+      }
+    }
+
+    #contact {
+      padding: 1em 1em;
+      margin-top: 3em;
+      h3 {
+        text-align: center;
+      }
+      .social {
+        a {
+          margin: 1em 1em;
+        }
+      }
+    }
+  }
+
+  @keyframes colorchange {
+    0% {
+      background-color: #eb008b;
+    }
+    25% {
+      background-color: #fff100;
+    }
+    50% {
+      background-color: #01a54f;
+    }
+    75% {
+      background-color: #00adef;
+    }
+    100% {
+      background-color: #eb008b;
+    }
+  }
+}
