@@ -1,16 +1,15 @@
 import React from 'react'
 
-export default function SingleProject({ name, url }) {
+export default function SingleProject({ name, url, img }) {
     return (
         <div className="col-sm-6">
             <div className="card">
                 <a href={url}>
-                    <img src="./assets/projects/gridbox.png" alt="grid_project" className='card-img-top' />
+                    <img src={img} alt={name} className='card-img-top' />
                 </a>
                 <div className="card-body">
                     <div className="card-title">{name}</div>
-                    <p className="card-text">text</p>
-                    <a href={url} className="btn btn-primary" target="_blank">Go to site</a>
+                    <a href={url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to site</a>
                 </div>
             </div>
         </div>

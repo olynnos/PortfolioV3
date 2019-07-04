@@ -1,9 +1,11 @@
+
+
 export const projects = [
     {
         "id": 1,
         "name": "Veneficus",
         "url": "https://veneficus.io/en/",
-        "img": "./assets/projects/veneficus.png",
+        "img": "./assets/projects/veneficus.jpg",
         "description": "Worked on this project with one other developer."
     },
     {
@@ -24,7 +26,7 @@ export const projects = [
         "id": 4,
         "name": "voorgoed agency",
         "url": "http://voorgoedagency.nl/",
-        "img": "./assets/projects/voorgoed.png",
+        "img": "./assets/projects/voorgoed.jpg",
         "description": ""
     },
 
