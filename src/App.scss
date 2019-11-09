@@ -21,6 +21,9 @@ $Lora: "Lora", serif;
       max-width: 90%;
     }
 
+    /* 
+      Animation for music notes. This one is not being used yet.
+    */
     #music_note_1{
       animation: bounce 1s linear 0.1s infinite alternate;
     }
@@ -46,6 +49,10 @@ $Lora: "Lora", serif;
       }
     }
 
+
+    /* 
+      Styling for the about me section
+    */
     #aboutme {
       margin-top: 5em;
       height: 100vh;
@@ -61,6 +68,9 @@ $Lora: "Lora", serif;
       }
     }
 
+    /* 
+      Styling for the project sections
+    */
     #myprojects {
       padding: 1em 1em;
       margin-top: 3em;
@@ -84,7 +94,7 @@ $Lora: "Lora", serif;
         transform-style: preserve-3d;
         cursor: pointer;
         position: relative;
-        min-height: 60vh;
+        // min-height: 60vh;
       }
 
       
@@ -118,6 +128,9 @@ $Lora: "Lora", serif;
 
     }
 
+    /* 
+      Styling for the contact section
+    */
     #contact {
       padding: 1em 1em;
       margin-top: 3em;
@@ -131,6 +144,8 @@ $Lora: "Lora", serif;
       }
     }
   }
+
+
 
   @keyframes colorchange {
     0% {
@@ -147,6 +162,15 @@ $Lora: "Lora", serif;
     }
     100% {
       background-color: #eb008b;
+    }
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    #myprojects{
+      .card{
+        font-size: 60%;
+      }
     }
   }
 }
